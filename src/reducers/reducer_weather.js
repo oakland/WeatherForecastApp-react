@@ -9,3 +9,5 @@ export default function(state=[], action) {
 	}
 	return state;
 }
+
+// reducer 是递归的意思，所以 reducer 的作用就是改变 state，传入一个 prevState，然后再加上一个 action，返回一个新的 state
