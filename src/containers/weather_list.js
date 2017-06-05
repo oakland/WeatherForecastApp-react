@@ -37,15 +37,15 @@ class WeatherList extends Component {
 					</tr>
 				</thead>
 				<tbody>
-					{this.props.weather.map(this.renderWeather)}
+					{this.props.weathers.map(this.renderWeather)}
 				</tbody>
 			</table>
 		);
 	}
 }
 
-function mapStateToProps({weather}) {
-	return {weather};
+function mapStateToProps({weathers}) {
+	return {weathers};
 }
 
 export default connect(mapStateToProps)(WeatherList);
